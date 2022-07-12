@@ -18,4 +18,15 @@ print(my_list_asc[1::2])
 print(my_list_asc[::2])
 
 # 6.Multiplii de 3
+# vers 1
 print(my_list_asc[2::3])
+
+# vers 2
+multiple_list = []
+def my_function(my_list):
+    for i in my_list:
+        if i % 3 == 0:
+            multiple_list.append(i) 
+    return multiple_list
+    
+print(my_function(my_list))
